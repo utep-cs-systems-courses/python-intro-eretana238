@@ -3,7 +3,6 @@
 import sys        # command line arguments
 import re         # regular expression tools
 import os         # checking if file exists
-import timeit     # checking program execution time
 
 # Check for correct number of arguments
 if len(sys.argv) != 3:
