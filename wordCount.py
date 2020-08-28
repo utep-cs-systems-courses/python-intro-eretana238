@@ -27,7 +27,7 @@ word_dictionary = {}
 with open(input_file, "r") as inputfile:
     for line in inputfile:
         # split only when punctuation, whitespace or other characters not in ASCII are found
-        words = re.split("[, |.|\s|\W+]", line)
+        words = re.split("[\W+|\s]", line)
         for word in words:
             if word.lower() in word_dictionary:
                 word_dictionary[word.lower()] += 1
